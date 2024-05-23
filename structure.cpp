@@ -1,24 +1,18 @@
 #include<iostream>
 using namespace std;
-
-typedef struct employee
-{
-    int eId;
-    char favchar;
-    float salery;
-} ep;
-int main()
-{
-    struct employee sonu;
-    ep wintr;
-    wintr.eId = 7;
-    sonu.eId = 5;
-    sonu.favchar = 'v';
-    sonu.salery = 50000;
-
-    cout<<" eId = "<<sonu.eId<<endl;
-    cout<<"favchar = "<<sonu.favchar<<endl;
-    cout<<"salery = "<<sonu.salery<<endl;
-    cout<<" wintr eId = "<<wintr.eId<<endl;
+struct car{
+    string name;
+    string model;
+    int year;
+};
+int main(){
+    car car1;
+    cout<<"Enter Name of the first car"<<endl;
+    cin>>car1.name;
+    cout<<"Enter Model of the Car"<<endl;
+    cin>>car1.model;
+    cout<<"Enter year "<<endl;
+    cin>>car1.year;
+    cout<<car1.name<<endl<<car1.model<<endl<<car1.year<<endl;
     return 0;
 }

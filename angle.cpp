@@ -16,4 +16,4 @@ int main()
         cout<<"third angle is - "<<c;
     }
     return 0;
-}z
+}
